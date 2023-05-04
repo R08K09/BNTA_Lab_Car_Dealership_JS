@@ -7,12 +7,6 @@ const car3 = new Car("BMW", 6500, "V10");
 
 const dealership1 = new Dealership("Motor Getawayz", 5, [car1, car2, car3]);
 
-let manufacturers = [];
-for(i = 0; i < dealership1.countCars; i++){
-    manufacturers.add(this.carsInStock[i].manufacturer);
-}
-console.log(manufacturers);
-
 console.log(dealership1.countCars());
 
 // console.log(dealership1.listOfManufacturers());
