@@ -60,4 +60,16 @@ describe("dealership methods", () => {
     //     expect(actual).toBe(expected);
     // });
 
+    test("can filter by manufacturer", () => {
+        const expected = [car3];
+        const actual = dealership1.findCarsByManufacturer("BMW");
+        expect(actual).toEqual(expected);
+    });
+
+    test("can find the total value of all cars in stock", () => {
+        const expected = 33000;
+        const actual = dealership1.totalValue();
+        expect(actual).toBe(expected);
+    });
+    
 });
