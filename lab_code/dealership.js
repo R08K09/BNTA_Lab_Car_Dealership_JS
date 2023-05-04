@@ -24,12 +24,9 @@ Dealership.prototype.addCar = function(newCar){
 
 Dealership.prototype.listOfManufacturers = function(){
     // return new Set(this.carsInStock.reduce((accumulator, car) => accumulator.concat(car.manufacturer), []));
-
-    let manufacturers = [];
-    for(i = 0; i < Dealership.countCars; i++){
-        manufacturers.add(this.carsInStock[i].manufacturer);
-    }
-    return manufacturers;
+    return this.carsInStock.map((car) => {
+        return car.manufacturer;
+    });
 }
 
 Dealership.prototype.findCarsByManufacturer = function(manufacturer){

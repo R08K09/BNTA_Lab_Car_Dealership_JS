@@ -9,4 +9,4 @@ const dealership1 = new Dealership("Motor Getawayz", 5, [car1, car2, car3]);
 
 console.log(dealership1.countCars());
 
-// console.log(dealership1.listOfManufacturers());
+console.log(dealership1.listOfManufacturers());

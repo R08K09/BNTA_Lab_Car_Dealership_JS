@@ -54,11 +54,11 @@ describe("dealership methods", () => {
         }
     });
     
-    // test("can return an array containing each car's manufacturer", () => {
-    //     const expected = new Array(["Mercedes Benz", "McLaren", "BMW", "Ferrari"]);
-    //     const actual = dealership1.listOfManufacturers();
-    //     expect(actual).toBe(expected);
-    // });
+    test("can return an array containing each car's manufacturer", () => {
+        const expected = ["Mercedes Benz", "McLaren", "BMW", "Ferrari", "Audi"];
+        const actual = dealership1.listOfManufacturers();
+        expect(actual).toEqual(expected);
+    });
 
     test("can filter by manufacturer", () => {
         const expected = [car3];
